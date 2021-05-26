@@ -1,0 +1,88 @@
+:root{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body{
+    background-color:orange;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+.sub-title{
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.gameboard-container{
+    display: flex;
+    justify-content: center; 
+}
+
+.gameboard-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 10px solid white;
+    border-radius: 5%;
+}
+
+.gameboard-button{
+    border: 1px solid white;
+    height: 6rem;
+    width: 6rem;
+    text-align: center;
+    line-height: 6rem;
+    font-size: 4rem;
+    background-color: lightblue;
+    border-radius: 5%;
+    color: rgb(95, 82, 57);
+    transition: 0.1s background-color linear, 0.1s color linear;
+    cursor: pointer;
+}
+
+.gameboard-button:hover{
+    background-color: rgb(134, 170, 182);
+}
+
+.taken{
+    background-color: grey;
+}
+
+.reset-button-box{
+    display: flex;
+    padding: 0.5rem 2rem;
+    justify-content: center;
+}
+
+.reset-button{
+    text-align: center;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 1rem;
+    font-weight: bold;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    cursor: pointer;
+    width: min-content;
+}
+.reset-button:hover{
+    border: lightblue;
+    background-color:lightblue;
+    color:rgb(95, 82, 57);
+}
+
+.announcement{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
